@@ -1,0 +1,50 @@
+FitCharge> Warning: No entry for NBFIX is found.
+Found LJ type       C3 for atom        C
+Found LJ type       C3 for atom       C1
+Found LJ type       OH for atom        O
+Found LJ type       HC for atom        H
+Found LJ type       HC for atom       H1
+Found LJ type       HC for atom       H2
+Found LJ type       H1 for atom       H3
+Found LJ type       H1 for atom       H4
+  1   MOL    1      C             CG =  -1.0*(C1)  -1.0*(O)  -1.0*(H)  -1.0*(H)  -1.0*(H)  -1.0*(H3)  -1.0*(H3)  -1.0*(H5) 
+  2   MOL    2     C1             CG-to-fit
+  3   MOL    3      O             CG-to-fit
+  4   MOL    4      H             CG-to-fit
+  5   MOL    5     H1  redundant
+  6   MOL    6     H2  redundant
+  7   MOL    7     H3             CG-to-fit
+  8   MOL    8     H4  redundant
+  9   MOL    9     H5             CG-to-fit
+Info about parameters to fit: 
+Parameter  1,   CG       of atom   C1 in mol   MOL. Idx = 2 Bound (-1.250, 1.250)
+Parameter  2,   CG       of atom    O in mol   MOL. Idx = 3 Bound (-1.250, 1.250)
+Parameter  3,   CG       of atom    H in mol   MOL. Idx = 4 Bound ( 0.000, 1.200)
+Parameter  4,   CG       of atom   H3 in mol   MOL. Idx = 7 Bound ( 0.000, 1.200)
+Parameter  5,   CG       of atom   H5 in mol   MOL. Idx = 9 Bound ( 0.000, 1.200)
+Entering ReadESPData()
+There are  1158 grid points in mol-esp.dat.
+Leaving ReadESPData()
+ 382 / 1158 grids points are identified as the neighbors of H donor/acceptor.
+Found LJ type       C3 for atom        C
+Found LJ type       C3 for atom       C1
+Found LJ type       OH for atom        O
+Found LJ type       HC for atom        H
+Found LJ type       HC for atom       H1
+Found LJ type       HC for atom       H2
+Found LJ type       H1 for atom       H3
+Found LJ type       H1 for atom       H4
+Found LJ type     OT_W for atom      OH2
+Found LJ type     HT_W for atom       H1
+Found LJ type     HT_W for atom       H2
+Read the previous parameters as the initial parameters
+  1    C -0.1484628 
+  2   C1  0.2917747 
+  3    O -0.6373542 
+  4    H  0.0372736 
+  5   H1  0.0372736 
+  6   H2  0.0372736 
+  7   H3  0.0000000 
+  8   H4  0.0000000 
+  9   H5  0.3822214 
+Time = 1 

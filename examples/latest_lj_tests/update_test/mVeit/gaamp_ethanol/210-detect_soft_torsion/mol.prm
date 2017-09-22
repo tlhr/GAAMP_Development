@@ -1,0 +1,46 @@
+* FORCE FIELD PARAMETER FILE.
+* 
+
+BONDS
+C3 C3  300.90   1.538
+C3 HC  330.60   1.097
+C3 OH  316.70   1.423
+C3 H1  330.60   1.097
+HO OH  371.40   0.973
+
+HT_W   HT_W      0.000     1.5139 ! FROM TIPS3P GEOMETRY (FOR SHAKE/W PARAM)
+OT_W   HT_W    450.000     0.9572 ! FROM TIPS3P GEOM
+
+ANGLES
+C3 C3 OH   67.470     110.190
+C3 C3 H1   46.390     109.560
+C3 C3 HC   46.340     109.800
+C3 OH HO   47.380     107.260
+OH C3 H1   50.930     110.260
+HC C3 HC   39.400     107.580
+H1 C3 H1   39.240     108.460
+
+HT_W   OT_W   HT_W     55.000   104.5200 ! TIP3P GEOMETRY
+
+DIHEDRALS
+HC C3 C3 OH     0.000         3       0.0
+HC C3 C3 OH     0.250         1       0.0
+X  C3 C3 X      0.156         3       0.0
+HO OH C3 C3     0.160         3       0.0
+HO OH C3 C3     0.250         1       0.0
+X  C3 OH X      0.167         3       0.0
+
+IMPROPERS
+
+NONBONDED  E14FAC  1.000000
+!                EMIN     RMIN/2              EMIN/2     RMIN  (FOR 1-4'S)
+!             (KCAL/MOL)    (A)
+C3      0.00   -0.1094    1.9080      0.00   -0.0547    1.9080
+OH      0.00   -0.2104    1.7210      0.00   -0.1052    1.7210
+HC      0.00   -0.0157    1.4870      0.00   -0.0078    1.4870
+H1      0.00   -0.0157    1.3870      0.00   -0.0078    1.3870
+HO      0.00   -0.0000    0.0000      0.00   -0.0000    0.0000
+
+HT_W     0.000000  -0.046000     0.224500 ! TIP3P HYDROGEN PARAMETERS, adm jr., NBFIX obsolete
+OT_W     0.000000  -0.152100     1.768200 ! TIP3P OXYGEN PARAMETERS, adm jr., NBFIX obsolete
+

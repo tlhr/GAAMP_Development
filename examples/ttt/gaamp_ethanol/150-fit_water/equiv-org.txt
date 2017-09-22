@@ -1,0 +1,2 @@
+equivalent    4   5   6
+equivalent    7   8

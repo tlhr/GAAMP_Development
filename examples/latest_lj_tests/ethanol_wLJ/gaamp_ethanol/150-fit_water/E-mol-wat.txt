@@ -1,0 +1,6 @@
+#Energy      1 acceptor  3 atom   O QM    -5.085153    2.0289 
+Acceptor     3    -5.085153    2.0289 
+Saved_MM_Parameters   0     1.8031805070140459     3.8347578082820402
+#Energy      1 donor  9 atom   O QM    -5.117607    2.0355 
+Donor     9    -5.117607    2.0355 
+Saved_MM_Parameters   0     1.7944620197163748     3.1790459923876457

@@ -1,0 +1,396 @@
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C3       -0.101
+ATOM C1     C3        0.126
+ATOM O      OH       -0.600
+ATOM H      HC        0.045
+ATOM H1     HC        0.045
+ATOM H2     HC        0.045
+ATOM H3     H1        0.022
+ATOM H4     H1        0.022
+ATOM H5     HO        0.396
+
+
+! Chi^2 =   0.4991           Chi^2(ESP) =   0.4989           Chi^2(RSTR_CG) =   0.0002 
+!                        Std_Error(ESP) =   0.0071       Std_Error(RSTR_CG) =   0.0079 
+
+
+
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C3       -0.129
+ATOM C1     C3        0.132
+ATOM O      OH       -0.596
+ATOM H      HC        0.040
+ATOM H1     HC        0.040
+ATOM H2     HC        0.040
+ATOM H3     H1        0.038
+ATOM H4     H1        0.038
+ATOM H5     HO        0.397
+
+
+! Chi^2 =   0.3155           Chi^2(ESP) =   0.3155           Chi^2(RSTR_CG) =   0.0000 
+!                        Std_Error(ESP) =   0.0056       Std_Error(RSTR_CG) =   0.0022 
+
+
+
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C3       -0.126
+ATOM C1     C3        0.132
+ATOM O      OH       -0.599
+ATOM H      HC        0.040
+ATOM H1     HC        0.040
+ATOM H2     HC        0.040
+ATOM H3     H1        0.040
+ATOM H4     H1        0.040
+ATOM H5     HO        0.393
+
+
+! Chi^2 =   0.2894           Chi^2(ESP) =   0.2893           Chi^2(RSTR_CG) =   0.0000 
+!                        Std_Error(ESP) =   0.0054       Std_Error(RSTR_CG) =   0.0014 
+
+
+
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C3       -0.121
+ATOM C1     C3        0.134
+ATOM O      OH       -0.605
+ATOM H      HC        0.039
+ATOM H1     HC        0.039
+ATOM H2     HC        0.039
+ATOM H3     H1        0.045
+ATOM H4     H1        0.045
+ATOM H5     HO        0.385
+
+
+! Chi^2 =   0.2669           Chi^2(ESP) =   0.2669           Chi^2(RSTR_CG) =   0.0000 
+!                        Std_Error(ESP) =   0.0052       Std_Error(RSTR_CG) =   0.0011 
+
+
+
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C3       -0.118
+ATOM C1     C3        0.134
+ATOM O      OH       -0.605
+ATOM H      HC        0.038
+ATOM H1     HC        0.038
+ATOM H2     HC        0.038
+ATOM H3     H1        0.045
+ATOM H4     H1        0.045
+ATOM H5     HO        0.385
+
+
+! Chi^2 =   0.2666           Chi^2(ESP) =   0.2666           Chi^2(RSTR_CG) =   0.0000 
+!                        Std_Error(ESP) =   0.0052       Std_Error(RSTR_CG) =   0.0010 
+
+
+
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C3       -0.048
+ATOM C1     C3        0.157
+ATOM O      OH       -0.610
+ATOM H      HC        0.018
+ATOM H1     HC        0.018
+ATOM H2     HC        0.018
+ATOM H3     H1        0.034
+ATOM H4     H1        0.034
+ATOM H5     HO        0.379
+
+
+! Chi^2 =   0.2614           Chi^2(ESP) =   0.2602           Chi^2(RSTR_CG) =   0.0011 
+!                        Std_Error(ESP) =   0.0051       Std_Error(RSTR_CG) =   0.0194 
+
+
+
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C3       -0.042
+ATOM C1     C3        0.164
+ATOM O      OH       -0.610
+ATOM H      HC        0.015
+ATOM H1     HC        0.015
+ATOM H2     HC        0.015
+ATOM H3     H1        0.031
+ATOM H4     H1        0.031
+ATOM H5     HO        0.381
+
+
+! Chi^2 =   0.2592           Chi^2(ESP) =   0.2577           Chi^2(RSTR_CG) =   0.0015 
+!                        Std_Error(ESP) =   0.0051       Std_Error(RSTR_CG) =   0.0226 
+
+
+
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C3       -0.041
+ATOM C1     C3        0.172
+ATOM O      OH       -0.611
+ATOM H      HC        0.014
+ATOM H1     HC        0.014
+ATOM H2     HC        0.014
+ATOM H3     H1        0.028
+ATOM H4     H1        0.028
+ATOM H5     HO        0.382
+
+
+! Chi^2 =   0.2581           Chi^2(ESP) =   0.2562           Chi^2(RSTR_CG) =   0.0018 
+!                        Std_Error(ESP) =   0.0051       Std_Error(RSTR_CG) =   0.0246 
+
+
+
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C3       -0.037
+ATOM C1     C3        0.179
+ATOM O      OH       -0.613
+ATOM H      HC        0.013
+ATOM H1     HC        0.013
+ATOM H2     HC        0.013
+ATOM H3     H1        0.025
+ATOM H4     H1        0.025
+ATOM H5     HO        0.382
+
+
+! Chi^2 =   0.2570           Chi^2(ESP) =   0.2551           Chi^2(RSTR_CG) =   0.0020 
+!                        Std_Error(ESP) =   0.0051       Std_Error(RSTR_CG) =   0.0255 
+
+
+
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C3       -0.048
+ATOM C1     C3        0.209
+ATOM O      OH       -0.619
+ATOM H      HC        0.014
+ATOM H1     HC        0.014
+ATOM H2     HC        0.014
+ATOM H3     H1        0.016
+ATOM H4     H1        0.016
+ATOM H5     HO        0.384
+
+
+! Chi^2 =   0.2534           Chi^2(ESP) =   0.2509           Chi^2(RSTR_CG) =   0.0025 
+!                        Std_Error(ESP) =   0.0050       Std_Error(RSTR_CG) =   0.0287 
+
+
+
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C3       -0.069
+ATOM C1     C3        0.253
+ATOM O      OH       -0.630
+ATOM H      HC        0.017
+ATOM H1     HC        0.017
+ATOM H2     HC        0.017
+ATOM H3     H1        0.005
+ATOM H4     H1        0.005
+ATOM H5     HO        0.385
+
+
+! Chi^2 =   0.2484           Chi^2(ESP) =   0.2442           Chi^2(RSTR_CG) =   0.0042 
+!                        Std_Error(ESP) =   0.0049       Std_Error(RSTR_CG) =   0.0373 
+
+
+
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C3       -0.087
+ATOM C1     C3        0.273
+ATOM O      OH       -0.634
+ATOM H      HC        0.021
+ATOM H1     HC        0.021
+ATOM H2     HC        0.021
+ATOM H3     H1        0.000
+ATOM H4     H1        0.000
+ATOM H5     HO        0.385
+
+
+! Chi^2 =   0.2456           Chi^2(ESP) =   0.2402           Chi^2(RSTR_CG) =   0.0054 
+!                        Std_Error(ESP) =   0.0049       Std_Error(RSTR_CG) =   0.0423 
+
+
+
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C3       -0.093
+ATOM C1     C3        0.278
+ATOM O      OH       -0.635
+ATOM H      HC        0.022
+ATOM H1     HC        0.022
+ATOM H2     HC        0.022
+ATOM H3     H1        0.000
+ATOM H4     H1        0.000
+ATOM H5     HO        0.384
+
+
+! Chi^2 =   0.2451           Chi^2(ESP) =   0.2394           Chi^2(RSTR_CG) =   0.0057 
+!                        Std_Error(ESP) =   0.0049       Std_Error(RSTR_CG) =   0.0435 
+
+
+
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C3       -0.147
+ATOM C1     C3        0.291
+ATOM O      OH       -0.637
+ATOM H      HC        0.037
+ATOM H1     HC        0.037
+ATOM H2     HC        0.037
+ATOM H3     H1        0.000
+ATOM H4     H1        0.000
+ATOM H5     HO        0.382
+
+
+! Chi^2 =   0.2419           Chi^2(ESP) =   0.2352           Chi^2(RSTR_CG) =   0.0067 
+!                        Std_Error(ESP) =   0.0049       Std_Error(RSTR_CG) =   0.0472 
+
+
+
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C3       -0.148
+ATOM C1     C3        0.292
+ATOM O      OH       -0.637
+ATOM H      HC        0.037
+ATOM H1     HC        0.037
+ATOM H2     HC        0.037
+ATOM H3     H1        0.000
+ATOM H4     H1        0.000
+ATOM H5     HO        0.382
+
+
+! Chi^2 =   0.2419           Chi^2(ESP) =   0.2351           Chi^2(RSTR_CG) =   0.0068 
+!                        Std_Error(ESP) =   0.0048       Std_Error(RSTR_CG) =   0.0475 
+
+
+
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C3       -0.148
+ATOM C1     C3        0.292
+ATOM O      OH       -0.637
+ATOM H      HC        0.037
+ATOM H1     HC        0.037
+ATOM H2     HC        0.037
+ATOM H3     H1        0.000
+ATOM H4     H1        0.000
+ATOM H5     HO        0.382
+
+
+! Chi^2 =   0.2419           Chi^2(ESP) =   0.2351           Chi^2(RSTR_CG) =   0.0068 
+!                        Std_Error(ESP) =   0.0048       Std_Error(RSTR_CG) =   0.0476 
+
+
+
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C3       -0.148
+ATOM C1     C3        0.292
+ATOM O      OH       -0.637
+ATOM H      HC        0.037
+ATOM H1     HC        0.037
+ATOM H2     HC        0.037
+ATOM H3     H1        0.000
+ATOM H4     H1        0.000
+ATOM H5     HO        0.382
+
+
+! Chi^2 =   0.2419           Chi^2(ESP) =   0.2351           Chi^2(RSTR_CG) =   0.0068 
+!                        Std_Error(ESP) =   0.0048       Std_Error(RSTR_CG) =   0.0476 
+
+
+
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C3       -0.148
+ATOM C1     C3        0.292
+ATOM O      OH       -0.637
+ATOM H      HC        0.037
+ATOM H1     HC        0.037
+ATOM H2     HC        0.037
+ATOM H3     H1        0.000
+ATOM H4     H1        0.000
+ATOM H5     HO        0.382
+
+
+! Chi^2 =   0.2419           Chi^2(ESP) =   0.2351           Chi^2(RSTR_CG) =   0.0068 
+!                        Std_Error(ESP) =   0.0048       Std_Error(RSTR_CG) =   0.0476 
+
+
+
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C3       -0.148
+ATOM C1     C3        0.292
+ATOM O      OH       -0.637
+ATOM H      HC        0.037
+ATOM H1     HC        0.037
+ATOM H2     HC        0.037
+ATOM H3     H1        0.000
+ATOM H4     H1        0.000
+ATOM H5     HO        0.382
+
+
+! Chi^2 =   0.2419           Chi^2(ESP) =   0.2351           Chi^2(RSTR_CG) =   0.0068 
+!                        Std_Error(ESP) =   0.0048       Std_Error(RSTR_CG) =   0.0476 
+
+
+
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C3       -0.148
+ATOM C1     C3        0.292
+ATOM O      OH       -0.637
+ATOM H      HC        0.037
+ATOM H1     HC        0.037
+ATOM H2     HC        0.037
+ATOM H3     H1        0.000
+ATOM H4     H1        0.000
+ATOM H5     HO        0.382
+
+
+! Chi^2 =   0.2419           Chi^2(ESP) =   0.2351           Chi^2(RSTR_CG) =   0.0068 
+!                        Std_Error(ESP) =   0.0048       Std_Error(RSTR_CG) =   0.0476 
+
+
+
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C3       -0.148
+ATOM C1     C3        0.292
+ATOM O      OH       -0.637
+ATOM H      HC        0.037
+ATOM H1     HC        0.037
+ATOM H2     HC        0.037
+ATOM H3     H1        0.000
+ATOM H4     H1        0.000
+ATOM H5     HO        0.382
+
+
+! Chi^2 =   0.2419           Chi^2(ESP) =   0.2351           Chi^2(RSTR_CG) =   0.0068 
+!                        Std_Error(ESP) =   0.0048       Std_Error(RSTR_CG) =   0.0476 
+
+
+
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C3       -0.148
+ATOM C1     C3        0.292
+ATOM O      OH       -0.637
+ATOM H      HC        0.037
+ATOM H1     HC        0.037
+ATOM H2     HC        0.037
+ATOM H3     H1        0.000
+ATOM H4     H1        0.000
+ATOM H5     HO        0.382
+
+
+! Chi^2 =   0.2419           Chi^2(ESP) =   0.2351           Chi^2(RSTR_CG) =   0.0068 
+!                        Std_Error(ESP) =   0.0048       Std_Error(RSTR_CG) =   0.0476 
+
+
+

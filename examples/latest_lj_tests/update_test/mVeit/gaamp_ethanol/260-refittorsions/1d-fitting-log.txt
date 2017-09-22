@@ -1,0 +1,11 @@
+FitCharge> Warning: No entry for NBFIX is found.
+Warning: Fail to open file mol.rtf
+The new rtf will not be saved.
+Found LJ type       C3 for atom        C
+Found LJ type       C3 for atom       C1
+Found LJ type       OH for atom        O
+Found LJ type       HC for atom        H
+Found LJ type       HC for atom       H1
+Found LJ type       HC for atom       H2
+Found LJ type       H1 for atom       H3
+Found LJ type       H1 for atom       H4

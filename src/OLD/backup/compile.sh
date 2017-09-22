@@ -1,0 +1,57 @@
+#!/bin/bash
+
+## Need to use the makefile but need to fix drude first
+
+INSTALLDIR='../bin'
+mkdir -p $INSTALLDIR
+cp SIZES $INSTALLDIR
+
+CC='g++'
+FC='ifort'
+CFLAGS='-g  -Wno-unused-variable -Wno-write-strings'
+NLOPTLIB='../opt/nlopt-2.4.2/.libs/libnlopt.a'
+
+$CC $CFLAGS -o $INSTALLDIR/1d-fitting 1d-fitting.cpp ff.cpp $NLOPTLIB
+$CC $CFLAGS -o $INSTALLDIR/1d-org 1d-fitting_org.cpp ff.cpp $NLOPTLIB
+$CC $CFLAGS -o $INSTALLDIR/1d-rotamer-fitting 1d-rotamer-fitting.cpp ff.cpp $NLOPTLIB 
+$CC $CFLAGS -o $INSTALLDIR/org-rotamer-E 1d-rotamer-fitting_org.cpp ff.cpp $NLOPTLIB
+$CC $CFLAGS -o $INSTALLDIR/acceptor acceptor.cpp ff.cpp $NLOPTLIB -static
+$CC $CFLAGS -o $INSTALLDIR/add-tip3 add-tip3.cpp -static
+$FC -o $INSTALLDIR/cgrid ConnollyGrid.f Surface.f -static
+$CC $CFLAGS -o $INSTALLDIR/check-b0-theta0 check-b0-theta0.cpp ff.cpp -static
+$CC $CFLAGS -o $INSTALLDIR/check_lj check_lj.cpp -static
+$CC $CFLAGS -o $INSTALLDIR/clustering-phi clustering-phi.cpp -static
+$CC $CFLAGS -o $INSTALLDIR/gen_soft_list gen_soft_list.cpp ff.cpp $NLOPTLIB -static
+$CC $CFLAGS -o $INSTALLDIR/donor donor.cpp ff.cpp $NLOPTLIB -static
+$CC $CFLAGS -o $INSTALLDIR/equiv_atom equiv_atom.cpp -static
+$CC $CFLAGS -o $INSTALLDIR/fitcharge fitcharge.cpp ff.cpp $NLOPTLIB -static
+$CC $CFLAGS -o $INSTALLDIR/fitcharge-again fitcharge-again.cpp ff.cpp $NLOPTLIB -static
+$CC $CFLAGS -o $INSTALLDIR/gen-esp gen-esp.cpp -static
+$CC $CFLAGS -o $INSTALLDIR/gen_xpsf gen_xpsf.cpp -static
+$CC $CFLAGS -o $INSTALLDIR/mm_pes mm_pes.cpp ff.cpp $NLOPTLIB -static
+$CC $CFLAGS -o $INSTALLDIR/mm_pes_large mm_pes_large.cpp ff.cpp $NLOPTLIB -static
+$CC $CFLAGS -o $INSTALLDIR/pdb_to_crd pdb_to_crd.cpp ff.cpp -static
+$CC $CFLAGS -o $INSTALLDIR/qm-1d-scan_large_para qm-1d-scan_large_para.cpp ff.cpp $NLOPTLIB -static
+$CC $CFLAGS -o $INSTALLDIR/qm-1d-scan-para qm-1d_-can-para.cpp ff.cpp $NLOPTLIB -static
+$CC $CFLAGS -o $INSTALLDIR/qm-1d-scan-single_para qm-1d-scan-single_para.cpp ff.cpp $NLOPTLIB -static
+$CC $CFLAGS -o $INSTALLDIR/qm-rotamer-scan qm-rotamer-scan.cpp ff.cpp $NLOPTLIB -static
+$CC $CFLAGS -openmp -o $INSTALLDIR/qm-rotamer-scan-large qm-rotamer_scan_large.cpp ff.cpp $NLOPTLIB -static
+$CC $CFLAGS -o $INSTALLDIR/update-tor-para update-tor-para.cpp ff.cpp $NLOPTLIB -static
+$CC $CFLAGS -o $INSTALLDIR/update-xpsf update-xpsf.cpp -static
+$FC -o $INSTALLDIR/drude-cgrid drude-ConnollyGrid.f drude-Surface.f -static
+$CC $CFLAGS -o $INSTALLDIR/drude-1d-fitting drude-1D-fitting.cpp ff.cpp $NLOPTLIB
+$CC $CFLAGS -o $INSTALLDIR/drude-1d-rotamer-fitting drude-1D-rotamer-fitting.cpp ff.cpp $NLOPTLIB
+
+$CC $CFLAGS -o $INSTALLDIR/drude-fitcharge_again drude-fitcharge_again.cpp drude-ff.cpp $NLOPTLIB
+$CC $CFLAGS -o $INSTALLDIR/drude-fitcharge drude-fitcharge.cpp drude-ff.cpp $NLOPTLIB
+
+$CC $CFLAGS -o $INSTALLDIR/drude-gen-esp drude-gen-esp.cpp -static
+$CC $CFLAGS -o $INSTALLDIR/drude-gen_xpsf drude-gen_xpsf.cpp -static
+$CC $CFLAGS -o $INSTALLDIR/drude-modify_lj drude-modify_lj.cpp -static
+$CC $CFLAGS -o $INSTALLDIR/drude-ff drude-modify_rtf.cpp ff.cpp $NLOPTLIB -static
+$CC $CFLAGS -o $INSTALLDIR/drude-scale-alpha drude-scale-alpha.cpp -static
+$CC $CFLAGS -o $INSTALLDIR/drude-scale-thole drude-scale-thole.cpp -static
+$CC $CFLAGS -o $INSTALLDIR/drude-scale-vdw-r6 drude-scale-vdw-r6.cpp -static
+$CC $CFLAGS -o $INSTALLDIR/drude-update-torsion-para drude-update-torsion-para.cpp ff.cpp $NLOPTLIB -static
+
+exit

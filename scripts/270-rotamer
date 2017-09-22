@@ -1,0 +1,34 @@
+#!/bin/sh
+source $GAAMPSCRIPTS/routines
+
+if [ "$WaterFit" -eq 1 ]; then
+  cp ../260-refittorsions/torsion-para-*.dat .
+else
+  cp ../240-1d-fitting/torsion-para-*.dat .
+fi
+cp ../230-qm_1d_scan/qm-1d-states.dat .
+cp ../230-qm_1d_scan/mol.prm .
+cp ../230-qm_1d_scan/mol.xpsf .
+cp ../230-qm_1d_scan/mol-opt.crd .
+cp ../230-qm_1d_scan/n_rotamer.txt .
+cp ../110-esp/elem-list.txt .
+
+NumRotamer=`cat n_rotamer.txt`
+
+echo "Number of rotamers: $NumRotamer" >> $LOGFILE
+
+if [ "$NumRotamer" -lt 64 ]; then
+  Gexe qm-rotamer-scan-large 0.1
+else
+  Gexe qm-rotamer-scan-large 0.5
+fi
+
+/usr/bin/python $GAAMPSCRIPTS/extract-qm-rotamer.py >> $LOGFILE
+
+###copying files to results folder
+cp qm-rotamer-*.out ../results/qm/
+cp qm-rotamer-*.gjf ../results/qm/
+
+
+exit 0
+

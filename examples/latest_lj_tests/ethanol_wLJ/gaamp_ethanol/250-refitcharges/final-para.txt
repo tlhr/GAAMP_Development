@@ -1,0 +1,55 @@
+Begin your input parameters
+
+equivalent    4   5   6
+equivalent    7   8
+
+
+
+
+netcharge   0
+w_H_Donor_Acceptor 1.0
+w_charge 3.0
+
+Using molecule-water interactions in fitting
+w_water_E_min 0.4
+w_water_R_min 8.0
+SCALE_QM_E_MIN          1.16
+SHIFT_QM_R_MIN         -0.20
+SHIFT_QM_R_MIN_CHARGED -0.20
+
+End   your input parameters
+
+
+The results of charge fitting is attached below.
+
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C33      -0.175
+ATOM C1     C32       0.297
+ATOM O      OH       -0.628
+ATOM H      HC33      0.045
+ATOM H1     HC33      0.045
+ATOM H2     HC33      0.045
+ATOM H3     H1        0.000
+ATOM H4     H1        0.000
+ATOM H5     HO        0.371
+
+
+! Chi^2 =   0.2617         Chi^2(ESP) =   0.2394          Chi^2(RSTR_CG) =   0.0073           Chi^2(Emin) =   0.0009           Chi^2(Rmin) =   0.0141 
+!                      Std_Error(ESP) =   0.0049      Std_Error(RSTR_CG) =   0.0493       Std_Error(Emin) =   0.0481       Std_Error(Rmin) =   0.0420 
+
+
+
+
+
+Compare QM and MM dipole: 
+QM dipole: (-1.2301, -0.1340,  1.3378)  1.8223
+MM dipole: (-1.2648, -0.0558,  1.4866)  1.9526
+
+
+
+List of E_Min, Rmin in MM and QM: 
+ 1 Donor, the H atom   9, MM E_min =  -5.985, QM E_min =  -5.936, MM R_min = 1.783, QM R_min = 1.835
+
+ 1 Acceptor, atom   3, MM E_min =  -5.851, QM E_min =  -5.899, MM R_min = 1.800, QM R_min = 1.829
+Note: RMSD between optimized structures in MM and QM is 0.216 Angstrom.

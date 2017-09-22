@@ -1,0 +1,47 @@
+#!/bin/sh
+
+source $GAAMPSCRIPTS/routines
+
+if [ "$WaterFit" -eq 1 ]; then
+  cp ../151-fit_water_drude/drude-mol.prm .
+  cp ../151-fit_water_drude/drude-esp-wat-mol.xpsf ./drude-mol.xpsf
+else
+  cp ../121-fit_esp_drude/drude-mol.prm .
+  cp ../121-fit_esp_drude/drude-esp-mol.xpsf ./drude-mol.xpsf
+fi
+
+cp ../230-qm_1d_scan/tor-1D-idx-*.dat .
+cp ../230-qm_1d_scan/soft-dih-list.txt .
+
+
+Gexe drude-1d-fitting
+
+head -n 1 torsion-para-1.dat > saved-para.dat
+
+$GAAMPSCRIPTS/plot-1d-result.sh
+cp *.png ../drude-result/
+
+
+exit 0
+
+
+
+
+
+
+
+
+###
+if [ "$NumTorsion" > 1 ]; then
+  rm -Rf saved-para.dat
+  touch saved-para.dat
+  IdxTor=1
+  while [  $IdxTor -le $NumTorsion ]; do
+    head -n 1 torsion-para-${IdxTor}.dat >> saved-para.dat
+    let IdxTor=IdxTor+1
+  done
+else
+  head -n 1 torsion-para-1.dat > saved-para.dat
+fi
+
+exit 0

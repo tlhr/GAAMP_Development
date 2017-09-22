@@ -1,0 +1,6 @@
+deprecated.lo: deprecated.c nlopt.h \
+ /blues/gpfs/home/software/gcc/4.4.6/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.4.6/include/stddef.h
+
+nlopt.h:
+
+/blues/gpfs/home/software/gcc/4.4.6/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.4.6/include/stddef.h:

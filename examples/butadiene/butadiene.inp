@@ -1,0 +1,13 @@
+# This is a prototype of a input file for GAAMP
+# It will be read as a shell script  
+JobName=butadiene
+FileName=$JobName.mol2
+FileType=mol2
+To_Fit_E_Wat=0
+TorsionFitting=1
+DrudeModel=1
+E14FAC=1.0
+NetCharge=0
+Ini_Parameters=Match
+Equivalent=equivalent-$JobName
+

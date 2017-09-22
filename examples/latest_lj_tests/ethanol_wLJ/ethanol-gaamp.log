@@ -1,0 +1,681 @@
+
+  	*****************************************************************
+	*								*
+	*    GAAMP - GENERAL AUTOMATED ATOMIC MODEL PARAMETERIZATION    *
+	*   			Version 1.0				*
+	*								*
+	*****************************************************************
+
+	ethanol 
+	Fri Jun 23 12:08:43 CDT 2017
+		
+	Will parameterizes the molecule in file ethanol.mol2 of format mol2
+
+	With the CHARMM additive force field
+
+		CCO
+
+# 010-preoptimize STARTED
+Preoptimizing structure using Gaussian
+%mem=1GB
+# opt ram1 
+ 
+Mol 
+ 
+0 1
+         Item               Value     Threshold  Converged?
+ Maximum Force            0.000054     0.000450     YES
+ RMS     Force            0.000013     0.000300     YES
+ Maximum Displacement     0.000754     0.001800     YES
+ RMS     Displacement     0.000293     0.001200     YES
+ Predicted change in Energy=-2.181635D-08
+ Optimization completed.
+# 010-preoptimize FINISHED in 0:4
+# 020-initial_parameters STARTED
+Using antechamber to guess initial parameters
+
+
+
+
+
+Warning: the antechamber program automatically changes the prediction type from '0' to '4' for bcc calculations !
+
+# 020-initial_parameters FINISHED in 0:1
+# 030-generate_structure STARTED
+	Equivalent atoms are automaticaly determined
+#    CALL equiv_atom
+#    DONE equiv_atom
+equivalent    4   5   6
+equivalent    7   8
+	No neutral group will be used
+	Will read fixed charges from fixq
+#    CALL add-tip3
+#    DONE add-tip3
+#    CALL gen_xpsf
+#    DONE gen_xpsf
+#    CALL gen_xpsf
+#    DONE gen_xpsf
+#    CALL pdb_to_crd
+#    DONE pdb_to_crd
+# 030-generate_structure FINISHED in 0:0
+# 110-esp STARTED
+#    CALL gen-esp
+Gen-Crd_file> Finished geometry optimization.
+#    DONE gen-esp
+#    CALL check-b0-theta0
+EBond   =      62.696597482385485023
+E_Angle =      0.579297749993197830
+E_UreyB =       0.000000000000000000
+E_Dihed =       0.009423391862404668
+E_Impro =       0.000000000000000000
+E_VDW   =       0.055074515856440895
+E_Elec  =      -4.323938159434803197
+E_CMap  =       0.000000000000000000
+
+E_Total =      59.016454980662722107
+
+EBond   =       0.046675864958909609
+E_Angle =      0.144909454076422667
+E_UreyB =       0.000000000000000000
+E_Dihed =       0.010126616848536959
+E_Impro =       0.000000000000000000
+E_VDW   =       1.637843961079534338
+E_Elec  =      -5.580870308351450149
+E_CMap  =       0.000000000000000000
+
+E_Total =      -3.741314411388046324
+
+
+
+No bond length or angle parameter is changed.
+#    DONE check-b0-theta0
+# 110-esp FINISHED in 0:8
+# 120-fit_esp STARTED
+#    CALL fitcharge
+Warning: para-opt-start.dat does not exist. Using the charges in xpsf as the initial parameters.
+#    DONE fitcharge
+#    CALL update-xpsf
+#    DONE update-xpsf
+# 120-fit_esp FINISHED in 0:0
+# 150-fit_water STARTED
+#    CALL acceptor
+Read previous charges.
+Obj_Min =    -5.7188962084
+Obj_Min =    -5.7188962084
+Obj_Min =    -5.7188962084
+Obj_Min =    -5.7188962084
+Obj_Min =    -5.7188962084
+Obj_Min =    -5.7188962084
+#    DONE acceptor
+#    CALL donor
+Read previous charges.
+Obj_Min =    -5.9626692951
+Obj_Min =    -5.9626692951
+Obj_Min =    -5.9626692951
+Obj_Min =    -5.9626692951
+Obj_Min =    -5.9626692951
+Obj_Min =    -5.9626692951
+#    DONE donor
+#    CALL gen_soft_list
+  1   2   3   9 
+  3   2   1   4 
+
+
+  1   2   3   9 
+#    DONE gen_soft_list
+#    CALL fitcharge
+#    DONE fitcharge
+#    CALL update-xpsf
+#    DONE update-xpsf
+# 150-fit_water FINISHED in 0:50
+# 210-detect_soft_torsion STARTED
+#    CALL gen_soft_list
+  1   2   3   9 
+  3   2   1   4 
+
+
+  1   2   3   9 
+#    DONE gen_soft_list
+# 210-detect_soft_torsion FINISHED in 0:0
+# 230-qm_1d_scan STARTED
+#    CALL qm-1d-scan-single_para
+#    DONE qm-1d-scan-single_para
+# 230-qm_1d_scan FINISHED in 1:8
+# 240-1d-fitting STARTED
+#    CALL 1d-fitting
+
+Phi before MM optimization:
+  0   1   2   8  -3.1416
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -3.1416
+
+Phi before MM optimization:
+  0   1   2   8  -2.9671
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -2.9671
+
+Phi before MM optimization:
+  0   1   2   8  -2.7925
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -2.7925
+
+Phi before MM optimization:
+  0   1   2   8  -2.6180
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -2.6180
+
+Phi before MM optimization:
+  0   1   2   8  -2.4435
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -2.4435
+
+Phi before MM optimization:
+  0   1   2   8  -2.2689
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -2.2689
+
+Phi before MM optimization:
+  0   1   2   8  -2.0944
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -2.0944
+
+Phi before MM optimization:
+  0   1   2   8  -1.9199
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -1.9199
+
+Phi before MM optimization:
+  0   1   2   8  -1.7453
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -1.7453
+
+Phi before MM optimization:
+  0   1   2   8  -1.5708
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -1.5708
+
+Phi before MM optimization:
+  0   1   2   8  -1.3963
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -1.3963
+
+Phi before MM optimization:
+  0   1   2   8  -1.2217
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -1.2217
+
+Phi before MM optimization:
+  0   1   2   8  -1.0472
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -1.0472
+
+Phi before MM optimization:
+  0   1   2   8  -0.8727
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -0.8727
+
+Phi before MM optimization:
+  0   1   2   8  -0.6981
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -0.6981
+
+Phi before MM optimization:
+  0   1   2   8  -0.5236
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -0.5236
+
+Phi before MM optimization:
+  0   1   2   8  -0.3491
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -0.3491
+
+Phi before MM optimization:
+  0   1   2   8  -0.1745
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -0.1745
+
+Phi before MM optimization:
+  0   1   2   8  -0.0000
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -0.0000
+
+Phi before MM optimization:
+  0   1   2   8   0.1745
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   0.1745
+
+Phi before MM optimization:
+  0   1   2   8   0.3491
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   0.3491
+
+Phi before MM optimization:
+  0   1   2   8   0.5236
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   0.5236
+
+Phi before MM optimization:
+  0   1   2   8   0.6981
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   0.6981
+
+Phi before MM optimization:
+  0   1   2   8   0.8727
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   0.8727
+
+Phi before MM optimization:
+  0   1   2   8   1.0472
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   1.0472
+
+Phi before MM optimization:
+  0   1   2   8   1.2217
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   1.2217
+
+Phi before MM optimization:
+  0   1   2   8   1.3963
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   1.3963
+
+Phi before MM optimization:
+  0   1   2   8   1.5708
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   1.5708
+
+Phi before MM optimization:
+  0   1   2   8   1.7453
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   1.7453
+
+Phi before MM optimization:
+  0   1   2   8   1.9199
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   1.9199
+
+Phi before MM optimization:
+  0   1   2   8   2.0944
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   2.0944
+
+Phi before MM optimization:
+  0   1   2   8   2.2689
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   2.2689
+
+Phi before MM optimization:
+  0   1   2   8   2.4435
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   2.4435
+
+Phi before MM optimization:
+  0   1   2   8   2.6180
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   2.6180
+
+Phi before MM optimization:
+  0   1   2   8   2.7925
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   2.7925
+
+Phi before MM optimization:
+  0   1   2   8   2.9671
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   2.9671
+
+Phi before MM optimization:
+  0   1   2   8   3.1416
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   3.1416
+Chi_SQ_min = 5.619001  Chi_SQ = 5.619001
+Chi_SQ_min = 5.619001  Chi_SQ = 5.641062
+Chi_SQ_min = 5.619001  Chi_SQ = 5.620634
+Chi_SQ_min = 5.619001  Chi_SQ = 5.643307
+Chi_SQ_min = 5.619001  Chi_SQ = 9.100641
+Chi_SQ_min = 5.619001  Chi_SQ = 9.104199
+Chi_SQ_min = 5.619001  Chi_SQ = 9.098489
+Chi_SQ_min = 5.619001  Chi_SQ = 9.102313
+Chi_SQ_min = 5.619001  Chi_SQ = 13.341173
+Chi_SQ_min = 5.619001  Chi_SQ = 13.418502
+Chi_SQ_min = 5.619001  Chi_SQ = 13.370021
+Chi_SQ_min = 5.619001  Chi_SQ = 13.452222
+Chi_SQ_min = 5.619001  Chi_SQ = 16.361709
+Chi_SQ_min = 5.619001  Chi_SQ = 16.399164
+Chi_SQ_min = 5.619001  Chi_SQ = 16.368963
+Chi_SQ_min = 5.619001  Chi_SQ = 16.408231
+Chi_SQ_min = 0.028716  Chi_SQ = 0.028716
+Chi_SQ_min = 0.028716  Chi_SQ = 0.030350
+Chi_SQ_min = 0.024524  Chi_SQ = 0.024524
+Chi_SQ_min = 0.024524  Chi_SQ = 0.026395
+Chi_SQ_min = 0.024524  Chi_SQ = 3.925849
+Chi_SQ_min = 0.024524  Chi_SQ = 3.923205
+Chi_SQ_min = 0.024524  Chi_SQ = 3.901941
+Chi_SQ_min = 0.024524  Chi_SQ = 3.899981
+Chi_SQ_min = 0.024524  Chi_SQ = 7.158822
+Chi_SQ_min = 0.024524  Chi_SQ = 7.185109
+Chi_SQ_min = 0.024524  Chi_SQ = 7.161740
+Chi_SQ_min = 0.024524  Chi_SQ = 7.188906
+Chi_SQ_min = 0.024524  Chi_SQ = 10.588783
+Chi_SQ_min = 0.024524  Chi_SQ = 10.594349
+Chi_SQ_min = 0.024524  Chi_SQ = 10.587749
+Chi_SQ_min = 0.024524  Chi_SQ = 10.593539
+#    DONE 1d-fitting
+Number of torsion = 1
+# 240-1d-fitting FINISHED in 0:1
+# 250-refitcharges STARTED
+#    CALL fitcharge-again
+Too much failed tries.
+I have tried my best.
+Quit.
+Too much failed tries.
+I have tried my best.
+Quit.
+Too much failed tries.
+I have tried my best.
+Quit.
+Too much failed tries.
+I have tried my best.
+Quit.
+Too much failed tries.
+I have tried my best.
+Quit.
+#    DONE fitcharge-again
+#    CALL update-xpsf
+#    DONE update-xpsf
+# 250-refitcharges FINISHED in 0:2
+# 260-refittorsions STARTED
+#    CALL 1d-fitting
+
+Phi before MM optimization:
+  0   1   2   8  -3.1416
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -3.1416
+
+Phi before MM optimization:
+  0   1   2   8  -2.9671
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -2.9671
+
+Phi before MM optimization:
+  0   1   2   8  -2.7925
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -2.7925
+
+Phi before MM optimization:
+  0   1   2   8  -2.6180
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -2.6180
+
+Phi before MM optimization:
+  0   1   2   8  -2.4435
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -2.4435
+
+Phi before MM optimization:
+  0   1   2   8  -2.2689
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -2.2689
+
+Phi before MM optimization:
+  0   1   2   8  -2.0944
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -2.0944
+
+Phi before MM optimization:
+  0   1   2   8  -1.9199
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -1.9199
+
+Phi before MM optimization:
+  0   1   2   8  -1.7453
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -1.7453
+
+Phi before MM optimization:
+  0   1   2   8  -1.5708
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -1.5708
+
+Phi before MM optimization:
+  0   1   2   8  -1.3963
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -1.3963
+
+Phi before MM optimization:
+  0   1   2   8  -1.2217
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -1.2217
+
+Phi before MM optimization:
+  0   1   2   8  -1.0472
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -1.0472
+
+Phi before MM optimization:
+  0   1   2   8  -0.8727
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -0.8727
+
+Phi before MM optimization:
+  0   1   2   8  -0.6981
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -0.6981
+
+Phi before MM optimization:
+  0   1   2   8  -0.5236
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -0.5236
+
+Phi before MM optimization:
+  0   1   2   8  -0.3491
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -0.3491
+
+Phi before MM optimization:
+  0   1   2   8  -0.1745
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -0.1745
+
+Phi before MM optimization:
+  0   1   2   8  -0.0000
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8  -0.0000
+
+Phi before MM optimization:
+  0   1   2   8   0.1745
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   0.1745
+
+Phi before MM optimization:
+  0   1   2   8   0.3491
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   0.3491
+
+Phi before MM optimization:
+  0   1   2   8   0.5236
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   0.5236
+
+Phi before MM optimization:
+  0   1   2   8   0.6981
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   0.6981
+
+Phi before MM optimization:
+  0   1   2   8   0.8727
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   0.8727
+
+Phi before MM optimization:
+  0   1   2   8   1.0472
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   1.0472
+
+Phi before MM optimization:
+  0   1   2   8   1.2217
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   1.2217
+
+Phi before MM optimization:
+  0   1   2   8   1.3963
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   1.3963
+
+Phi before MM optimization:
+  0   1   2   8   1.5708
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   1.5708
+
+Phi before MM optimization:
+  0   1   2   8   1.7453
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   1.7453
+
+Phi before MM optimization:
+  0   1   2   8   1.9199
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   1.9199
+
+Phi before MM optimization:
+  0   1   2   8   2.0944
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   2.0944
+
+Phi before MM optimization:
+  0   1   2   8   2.2689
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   2.2689
+
+Phi before MM optimization:
+  0   1   2   8   2.4435
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   2.4435
+
+Phi before MM optimization:
+  0   1   2   8   2.6180
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   2.6180
+
+Phi before MM optimization:
+  0   1   2   8   2.7925
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   2.7925
+
+Phi before MM optimization:
+  0   1   2   8   2.9671
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   2.9671
+
+Phi before MM optimization:
+  0   1   2   8   3.1416
+nlopt failed! -------- 
+Phi after MM optimization:
+  0   1   2   8   3.1416
+Chi_SQ_min = 5.875987  Chi_SQ = 5.875987
+Chi_SQ_min = 5.875987  Chi_SQ = 5.898776
+Chi_SQ_min = 5.875987  Chi_SQ = 5.877801
+Chi_SQ_min = 5.875987  Chi_SQ = 5.901243
+Chi_SQ_min = 5.875987  Chi_SQ = 9.344187
+Chi_SQ_min = 5.875987  Chi_SQ = 9.348075
+Chi_SQ_min = 5.875987  Chi_SQ = 9.342246
+Chi_SQ_min = 5.875987  Chi_SQ = 9.346398
+Chi_SQ_min = 5.875987  Chi_SQ = 13.645687
+Chi_SQ_min = 5.875987  Chi_SQ = 13.724598
+Chi_SQ_min = 5.875987  Chi_SQ = 13.675417
+Chi_SQ_min = 5.875987  Chi_SQ = 13.759323
+Chi_SQ_min = 5.875987  Chi_SQ = 16.652507
+Chi_SQ_min = 5.875987  Chi_SQ = 16.691142
+Chi_SQ_min = 5.875987  Chi_SQ = 16.660240
+Chi_SQ_min = 5.875987  Chi_SQ = 16.700775
+Chi_SQ_min = 0.028776  Chi_SQ = 0.028776
+Chi_SQ_min = 0.028776  Chi_SQ = 0.030413
+Chi_SQ_min = 0.024556  Chi_SQ = 0.024556
+Chi_SQ_min = 0.024556  Chi_SQ = 0.026431
+Chi_SQ_min = 0.024556  Chi_SQ = 3.921361
+Chi_SQ_min = 0.024556  Chi_SQ = 3.918726
+Chi_SQ_min = 0.024556  Chi_SQ = 3.897404
+Chi_SQ_min = 0.024556  Chi_SQ = 3.895452
+Chi_SQ_min = 0.024556  Chi_SQ = 7.191709
+Chi_SQ_min = 0.024556  Chi_SQ = 7.218097
+Chi_SQ_min = 0.024556  Chi_SQ = 7.194633
+Chi_SQ_min = 0.024556  Chi_SQ = 7.221904
+Chi_SQ_min = 0.024556  Chi_SQ = 10.616355
+Chi_SQ_min = 0.024556  Chi_SQ = 10.621980
+Chi_SQ_min = 0.024556  Chi_SQ = 10.615330
+Chi_SQ_min = 0.024556  Chi_SQ = 10.621177
+#    DONE 1d-fitting
+# 260-refittorsions FINISHED in 0:0

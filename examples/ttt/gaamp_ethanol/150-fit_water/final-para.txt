@@ -1,0 +1,54 @@
+Begin your input parameters
+
+equivalent    4   5   6
+equivalent    7   8
+
+fix 3 0.0
+
+
+
+netcharge   0
+w_H_Donor_Acceptor 1.0
+w_charge 3.0
+
+Using molecule-water interactions in fitting
+w_water_E_min 0.4
+w_water_R_min 8.0
+SCALE_QM_E_MIN          1.16
+SHIFT_QM_R_MIN         -0.20
+SHIFT_QM_R_MIN_CHARGED -0.20
+
+End   your input parameters
+
+
+The results of charge fitting is attached below.
+
+RESI MOL           0.000 ! 
+GROUP
+ATOM C      C3       -0.376
+ATOM C1     C3       -1.250
+ATOM O      OH        0.000
+ATOM H      HC        0.207
+ATOM H1     HC        0.207
+ATOM H2     HC        0.207
+ATOM H3     H1        0.412
+ATOM H4     H1        0.412
+ATOM H5     HO        0.181
+
+
+! Chi^2 =   9.7225         Chi^2(ESP) =   3.7673          Chi^2(RSTR_CG) =   0.8426           Chi^2(Emin) =   4.7234           Chi^2(Rmin) =   0.3892 
+!                      Std_Error(ESP) =   0.0194      Std_Error(RSTR_CG) =   0.5300       Std_Error(Emin) =   3.4364       Std_Error(Rmin) =   0.2206 
+
+
+
+
+
+Compare QM and MM dipole: 
+QM dipole: (-1.2301, -0.1340,  1.3378)  1.8223
+MM dipole: (-1.2825, -0.2322,  0.6194)  1.4430
+
+
+
+List of E_Min, Rmin in MM and QM: 
+
+ 1 Acceptor, atom   3, MM E_min =  -2.462, QM E_min =  -5.899, MM R_min = 2.049, QM R_min = 1.828

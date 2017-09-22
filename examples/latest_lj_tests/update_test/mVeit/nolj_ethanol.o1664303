@@ -1,0 +1,33 @@
+###################=- Blues Job 1664303.bmgt1.lcrc.anl.gov -=#####################
+Job ID: 1664303.bmgt1.lcrc.anl.gov 
+User ID: rupakhetic 
+Group ID: collab 
+Job Name: nolj_ethanol 
+Resources: neednodes=1:ppn=16,nodes=1:ppn=16,size=16,walltime=24:00:00 
+Queue: lSerial 
+Account: Drude 
+##########################################################
+
+
+1 molecule converted
+18 audit log messages 
+cp: cannot stat `../*pdb': No such file or directory
+cp: cannot stat `../*mol2': No such file or directory
+mkdir: cannot create directory `/scratch/1664303.bmgt1.lcrc.anl.gov/0': File exists
+mkdir: cannot create directory `/scratch/1664303.bmgt1.lcrc.anl.gov/0': File exists
+         line 0: warning: Skipping unreadable file "org-1d-1.dat"
+cp: omitting directory `../150-fit_water/dat-acceptor-1-3'
+cp: omitting directory `../150-fit_water/dat-donor-1-9'
+cp: cannot stat `mol-*m.pdb': No such file or directory
+cp: cannot stat `mol-tor.rtf': No such file or directory
+##############=- Blues Job Resource Usage -=##############
+Job ID: 1664303.bmgt1.lcrc.anl.gov 
+User ID: rupakhetic 
+Group ID: collab 
+Job Name: nolj_ethanol 
+Session ID: 98660 
+Resources: neednodes=1:ppn=16,nodes=1:ppn=16,size=16,walltime=24:00:00 
+Resources Used: cput=00:02:19,mem=244336kb,vmem=5255236kb,walltime=00:02:15 
+Queue: lSerial 
+Account: Drude 
+##########################################################

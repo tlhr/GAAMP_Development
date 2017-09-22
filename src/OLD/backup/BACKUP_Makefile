@@ -1,0 +1,23 @@
+CSRC   := $(shell ls *.cpp) 
+COBJ   := $(CSRC:.cpp=.o)
+CEXE   := $(CSRC:.cpp=)
+FSRC   := $(shell ls *.cpp)
+
+CC     := g++
+FC     := ifort
+CFLAGS := -g  -Wno-unused-variable -Wno-write-strings
+
+all: $(CSRC) $(CEXE)
+
+$(CEXE): $(COBJ)
+	$(CC) $(CFLAGS) $(COBJ) -o ../bin/@ ff.cpp ../opt/nlopt-2.4.2/.libs/libnlopt.a
+
+
+
+
+
+../bin : 
+	mkdir -p ../bin
+
+ 
+	$(CC) $(CFLAGS) -o ../bin/$@ $(CSRC) ff.cpp ../opt/nlopt-2.4.2/.libs/libnlopt.a

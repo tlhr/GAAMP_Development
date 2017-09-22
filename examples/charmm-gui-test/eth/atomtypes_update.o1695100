@@ -1,0 +1,44 @@
+###################=- Blues Job 1695100.bmgt1.lcrc.anl.gov -=#####################
+Job ID: 1695100.bmgt1.lcrc.anl.gov 
+User ID: rupakhetic 
+Group ID: collab 
+Job Name: nolj_ethanol 
+Resources: neednodes=1:ppn=4,nodes=1:ppn=4,size=4,walltime=04:00:00 
+Queue: lSerial 
+Account: Drude 
+##########################################################
+
+
+1 molecule converted
+18 audit log messages 
+1 molecule converted
+8 audit log messages 
+1 molecule converted
+19 audit log messages 
+1 molecule converted
+24 audit log messages 
+Total number of electrons: 26; net charge: 0
+
+Running: /home/huanglei/tools/amber11/bin/sqm -O -i sqm.in -o sqm.out
+cp: cannot stat `../*pdb': No such file or directory
+cp: cannot stat `../*mol2': No such file or directory
+mkdir: cannot create directory `/scratch/1695100.bmgt1.lcrc.anl.gov/0': File exists
+mkdir: cannot create directory `/scratch/1695100.bmgt1.lcrc.anl.gov/0': File exists
+         line 0: warning: Skipping unreadable file "org-1d-1.dat"
+cp: omitting directory `../150-fit_water/dat-acceptor-1-3'
+cp: omitting directory `../150-fit_water/dat-donor-1-9'
+cp: cannot stat `mol-*m.pdb': No such file or directory
+cp: cannot stat `mol-tor.rtf': No such file or directory
+UPDATING_PRM: mol-tor.prm
+UPDATING_RTF: mol-tor.rtf
+##############=- Blues Job Resource Usage -=##############
+Job ID: 1695100.bmgt1.lcrc.anl.gov 
+User ID: rupakhetic 
+Group ID: collab 
+Job Name: nolj_ethanol 
+Session ID: 33855 
+Resources: neednodes=1:ppn=4,nodes=1:ppn=4,size=4,walltime=04:00:00 
+Resources Used: cput=00:02:50,mem=192760kb,vmem=5337104kb,walltime=00:02:24 
+Queue: lSerial 
+Account: Drude 
+##########################################################

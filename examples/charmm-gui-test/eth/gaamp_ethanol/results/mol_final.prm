@@ -1,0 +1,54 @@
+* Force Field Parameter File.
+*
+
+ATOMS
+MASS        -1 C3GP     12.010000 
+MASS        -1 OHGP     16.000000 
+MASS        -1 HCGP     1.008000  
+MASS        -1 H1GP     1.008000  
+MASS        -1 HOGP     1.008000  
+MASS        -1 HTWGP    1.008000  
+MASS        -1 OTWGP    15.999400 
+
+BONDS
+C3GP   C3GP   303.10 1.535 
+C3GP   HCGP   337.30 1.092 
+C3GP   OHGP   314.10 1.426 
+C3GP   H1GP   335.90 1.093 
+HOGP   OHGP   369.60 0.974 
+HTWGP  HTWGP  0.000  1.5139
+OTWGP  HTWGP  450.000 0.9572
+
+ANGLES
+C3GP   C3GP   OHGP   67.720   109.430 
+C3GP   C3GP   H1GP   46.360   110.070 
+C3GP   C3GP   HCGP   46.370   110.050 
+C3GP   OHGP   HOGP   47.090   108.160 
+OHGP   C3GP   H1GP   50.970   109.880 
+HCGP   C3GP   HCGP   39.430   108.350 
+H1GP   C3GP   H1GP   39.180   109.550 
+HTWGP  OTWGP  HTWGP  55.000   104.5200
+
+DIHEDRALS
+X      C3GP   C3GP   X      0.156    3     0.0   
+HCGP   C3GP   C3GP   OHGP   0.000    3     0.0   
+HCGP   C3GP   C3GP   OHGP   0.250    1     0.0   
+X      C3GP   OHGP   X      0.167    3     0.0   
+HOGP   OHGP   C3GP   C3GP   0.160    3     0.0   
+HOGP   OHGP   C3GP   C3GP   0.250    1     0.0   
+
+IMPROPERS
+
+NONBONDED  NBXMOD 5  GROUP SWITCH CDIEL -
+CUTNB 14.0  CTOFNB 12.0  CTONNB 10.0  EPS 1.0  E14FAC 0.83333333  WMIN 1.4
+!                Emin     Rmin/2              Emin/2     Rmin  (for 1-4's)
+!             (kcal/mol)    (A)
+C3GP   0.00   -0.1094      1.9080       0.00   -0.0547      1.9080      
+OHGP   0.00   -0.2104      1.7210       0.00   -0.1052      1.7210      
+HCGP   0.00   -0.0157      1.4870       0.00   -0.0078      1.4870      
+H1GP   0.00   -0.0157      1.3870       0.00   -0.0078      1.3870      
+HOGP   0.00   -0.0000      0.0000       0.00   -0.0000      0.0000      
+HTWGP  0.000000 -0.046000    0.224500     !      TIP3P        HYDROGEN    
+OTWGP  0.000000 -0.152100    1.768200     !      TIP3P        OXYGEN      
+
+END

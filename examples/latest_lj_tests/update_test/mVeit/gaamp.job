@@ -1,0 +1,15 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=16
+#PBS -l walltime=24:00:00
+#PBS -j oe
+#PBS -N nolj_ethanol
+#PBS -A Drude
+
+cd $PBS_O_WORKDIR
+cat $PBS_NODEFILE > nodes.txt
+export GAUSS_SCRDIR=$TMPDIR
+
+
+/lcrc/project/Drude/chetan/lily_debug_new/GAAMP-06-23-17/scripts/gaamp ethanol.inp
+
+

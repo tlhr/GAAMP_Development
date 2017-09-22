@@ -1,0 +1,31 @@
+#!/bin/sh
+source $GAAMPSCRIPTS/routines
+
+if [ "$WaterFit" -eq 1 ]; then
+  filedir="../260-refittorsions"
+else
+  filedir="../240-1d-fitting"
+fi
+
+cp $filedir/mm-tor-1D-idx-*.dat .
+cp $filedir/torsion-para-*.dat .
+cp $filedir/soft-dih-list.txt .
+cp ../120-fit_esp/fit-mol.conf .
+cp ../240-1d-fitting/mol.prm .
+cp ../240-1d-fitting/mol.xpsf .
+cp ../270-rotamer/all-rotamer.dat .
+
+Gexe 1d-rotamer-fitting fit-mol.conf
+
+### copying files to results folder
+cp *.dat ../results
+
+cp mol-*m.pdb ../results/
+cp mol-tor.rtf ../results/mol-tor.rtf
+cp mol.prm ../results/mol-tor.prm
+cp mol.xpsf ../results/mol-tor.xpsf
+
+$GAAMPSCRIPTS/rotamer-plot-1d-result-and-org.sh
+cp *.png ../result/
+
+exit 0

@@ -1,0 +1,12 @@
+# This is a prototype of a input file for GAAMP
+# It will be read as a shell script  
+# Defaults values can be found in MyGAAMP/scripts/defaults
+JobName=aspirin
+FileName=aspirin.pdb
+FileType=pdb
+DrudeModel=1
+E14FAC=1.0
+NetCharge=-1
+Ini_Parameters=GAFF
+Equivalent=equivalent-aspirin
+

@@ -1,0 +1,45 @@
+FitCharge> Warning: No entry for NBFIX is found.
+Found LJ type       C3 for atom        C
+Found LJ type       C3 for atom       C1
+Found LJ type       OH for atom        O
+Found LJ type       HC for atom        H
+Found LJ type       HC for atom       H1
+Found LJ type       HC for atom       H2
+Found LJ type       H1 for atom       H3
+Found LJ type       H1 for atom       H4
+Found LJ type     OT_W for atom      OH2
+Found LJ type     HT_W for atom       H1
+Found LJ type     HT_W for atom       H2
+Found LJ type       C3 for atom        C
+Found LJ type       C3 for atom       C1
+Found LJ type       OH for atom        O
+Found LJ type       HC for atom        H
+Found LJ type       HC for atom       H1
+Found LJ type       HC for atom       H2
+Found LJ type       H1 for atom       H3
+Found LJ type       H1 for atom       H4
+mol_H_acceptor.cpp>  1 H acceptor:  3 atom   O MM, E_min = -5.4736 r_min =  1.8427
+theta =   0  r =     1.8427084814960726 phi =    -2.4440832516218571
+mol_H_acceptor.cpp>  1 H acceptor:  3 atom   C QM, E_min = -5.0852 r_min =  2.0285
+FitCharge> Warning: No entry for NBFIX is found.
+Found LJ type       C3 for atom        C
+Found LJ type       C3 for atom       C1
+Found LJ type       OH for atom        O
+Found LJ type       HC for atom        H
+Found LJ type       HC for atom       H1
+Found LJ type       HC for atom       H2
+Found LJ type       H1 for atom       H3
+Found LJ type       H1 for atom       H4
+Found LJ type     OT_W for atom      OH2
+Found LJ type     HT_W for atom       H1
+Found LJ type     HT_W for atom       H2
+Found LJ type       C3 for atom        C
+Found LJ type       C3 for atom       C1
+Found LJ type       OH for atom        O
+Found LJ type       HC for atom        H
+Found LJ type       HC for atom       H1
+Found LJ type       HC for atom       H2
+Found LJ type       H1 for atom       H3
+Found LJ type       H1 for atom       H4
+mol_H_donor.cpp>  1 H  9 donor:  3 atom   O MM, E_min = -5.7031 r_min =  1.8335  theta =   0  r =   1.833 phi =   0.039
+mol_H_donor.cpp>  1 H  9 donor:  3 atom   O QM, E_min = -5.1176 r_min =  2.0357

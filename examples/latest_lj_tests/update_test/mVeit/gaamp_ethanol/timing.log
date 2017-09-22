@@ -1,0 +1,11 @@
+010-preoptimize		0:4
+020-initial_parameters		0:0
+030-generate_structure		0:1
+110-esp		0:10
+120-fit_esp		0:1
+150-fit_water		0:50
+210-detect_soft_torsion		0:0
+230-qm_1d_scan		1:8
+240-1d-fitting		0:1
+250-refitcharges		0:1
+260-refittorsions		0:1
