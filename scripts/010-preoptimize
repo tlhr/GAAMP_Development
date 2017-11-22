@@ -15,8 +15,8 @@ leftline=`expr $linenum - 5`
 cat mol-opt.gjf >> $LOGFILE
 tail -n $leftline mol.gjf >> mol-opt.gjf
 
-#$GAUSS_EXEDIR/g09 < mol-opt.gjf > mol-opt-00.out 
-$GAUSS_EXEDIR/g16 < mol-opt.gjf > mol-opt-00.out ## g16 used now 
+$GAUSS_EXEDIR/g09 < mol-opt.gjf > mol-opt-00.out 
+# $GAUSS_EXEDIR/g16 < mol-opt.gjf > mol-opt-00.out ## g16 used now 
 CheckError "Error using gaussian"
 
 tmpl=`grep -n Converged? mol-opt-00.out | tail -n 1 | awk '{print $1}' | sed 's/://' | awk '{print $1+6}'`
