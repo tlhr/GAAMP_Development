@@ -17,7 +17,7 @@ case $Ini_Parameters in
 
 	  cp mol-opt.pdb mol.pdb
 
-	  $MATCH/scripts/MATCH.pl -forcefield top_all36_cgenff mol.pdb > log_match.txt
+	  $MATCH/scripts/match.pl -forcefield top_all36_cgenff mol.pdb > log_match.txt
 	  CheckError "Error using MATCH"
 	  Success=`grep "Success" log_match.txt | wc -l`
 	  if [ "$Success" -eq 0 ]; then
