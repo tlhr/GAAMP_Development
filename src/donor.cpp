@@ -286,10 +286,10 @@ int main(int argc, char *argv[])
 		if(Is_N[i] && (nCount_H[i]>=0) )	{
 			ToGenerate_Water = 1;
 		}
-		else if(Is_O[i] && (BondWithH[i]>=0) )	{
+		else if(Is_O[i] && (BondWithH[i]!=0) )	{
 			ToGenerate_Water = 1;
 		}
-		else if(Is_F[i] && (BondWithH[i]>=0) )	{
+		else if(Is_F[i] && (BondWithH[i]!=0) )	{
 			ToGenerate_Water = 1;
 		}
 //		else if(Is_S[i] && (Bond_Count[i]<=2) )	{
