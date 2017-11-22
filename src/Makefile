@@ -1,6 +1,6 @@
 CSRC   := $(shell ls *.cpp | grep -v ff.cpp)
 CC     := g++
-FC     := ifort
+FC     := gfortran
 CFLAGS := -g -Wno-unused-variable -Wno-write-strings
 FFLAGS := 
 SFILES := surface
