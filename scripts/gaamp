@@ -37,7 +37,7 @@ done
 
  
 # Use User Defined QM Calc Settings
-python $GAAMPSCRIPTS/AssignQMParams.py $GAAMPRUN $QM_MEM $QM_NPROC
+$PYTHON $GAAMPSCRIPTS/AssignQMParams.py $GAAMPRUN $QM_MEM $QM_NPROC
 
 mkdir -p $GAAMPRUN/results
 
@@ -50,7 +50,7 @@ GRun 020-initial_parameters
 
 # Use Optimized LJ Parameters/Atom Types?
 if [ "$UseLJOptPara" == 1 ]; then
-  python $GAAMPSCRIPTS/GAAMP-UpdateVdw.py $GAAMPRUN mol.rtf mol.prm	
+  $PYTHON $GAAMPSCRIPTS/GAAMP-UpdateVdw.py $GAAMPRUN mol.rtf mol.prm	
 fi
 
 # Update atomtypes to make it CHARMM-GUI Compatible
@@ -118,7 +118,7 @@ fi
 
 # Update atomtypes to make it CHARMM-GUI Compatible
 if [ "$UpdateAtomType" == 1 ]; then
-  python $GAAMPSCRIPTS/UpdateAtomTypes.py $GAAMPRUN
+  $PYTHON $GAAMPSCRIPTS/UpdateAtomTypes.py $GAAMPRUN
 fi
 
 ###GRun 999-Results
