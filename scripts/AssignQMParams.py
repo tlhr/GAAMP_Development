@@ -5,7 +5,7 @@ def writeQMSetting(GAAMP_RUN,QM_MEM,QM_NPROC):
     fin = open(gaampScriptPath+'QM-para.txt','r')
     fout = open(GAAMP_RUN+'/QM-para.txt','w')
     for line in fin:
-    token=line.rstrip().split()
+        token=line.rstrip().split()
     if len(token)>0:
        if token[0]=="QM_MEM":
         	line = line.replace("QM_MEM        1GB","QM_MEM        "+QM_MEM)
