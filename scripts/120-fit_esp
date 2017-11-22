@@ -27,7 +27,7 @@ echo "FILE_FORCE_FIELD    mol.prm" >> fit-mol.conf
 echo "FILE_PSF            mol.xpsf" >> fit-mol.conf
 echo "FILE_CRD            mol-opt.crd" >> fit-mol.conf
 echo "FILE_pot0           mol-esp.dat" >> fit-mol.conf 
-/bin/grep "    X= " ../110-esp/cal-esp.out | /usr/bin/head -n 1 | /bin/awk '{print "DIPOLE_QM " $2 "  "  $4 "   " $6 "   " $8}' >> fit-mol.conf
+grep "    X= " ../110-esp/cal-esp.out | head -n 1 | awk '{print "DIPOLE_QM " $2 "  "  $4 "   " $6 "   " $8}' >> fit-mol.conf
 
 Gexe fitcharge fit-mol.conf 
 
