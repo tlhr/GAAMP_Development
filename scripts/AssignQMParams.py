@@ -6,12 +6,12 @@ def writeQMSetting(GAAMP_RUN,QM_MEM,QM_NPROC):
     fout = open(GAAMP_RUN+'/QM-para.txt','w')
     for line in fin:
         token=line.rstrip().split()
-    if len(token)>0:
-       if token[0]=="QM_MEM":
-        	line = line.replace("QM_MEM        1GB","QM_MEM        "+QM_MEM)
-       elif token[0]=="QM_NPROC":
-        	line = line.replace("QM_NPROC      8","QM_NPROC      "+QM_NPROC)		
-    print>>fout,line.rstrip()
+        if len(token)>0:
+            if token[0]=="QM_MEM":
+                line = line.replace("QM_MEM        1GB","QM_MEM        "+QM_MEM)
+            elif token[0]=="QM_NPROC":
+                line = line.replace("QM_NPROC      8","QM_NPROC      "+QM_NPROC)		
+        print>>fout,line.rstrip()
     fout.close()
     fin.close()    
 
