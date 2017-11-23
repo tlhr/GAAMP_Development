@@ -301,7 +301,7 @@ int main(int argc, char **argv)
 		Enumerate_Dihedrals(0);	// do MM optimization
 		
 		Read_All_MM_Rotamers(Counter);
-		system("/bin/tar -zcvf opt-mm.tgz opt-*.crd > /dev/null ; /bin/rm opt-*.crd");	// tar and delete pdb files
+		system("tar -zcvf opt-mm.tgz opt-*.crd > /dev/null ; rm opt-*.crd");	// tar and delete pdb files
 		Exclude_Conf_Longdist_HBond();	// exclude those configurations with long-distance intra-molecular H-Bond
 		ClusteringRotamers();
 		WriteIniConf_For_QM();
@@ -346,7 +346,7 @@ int main(int argc, char **argv)
 
 	fclose(fOut);
 
-	system("/bin/tar -zcvf qm-ini.tgz qm-ini-*.pdb > /dev/null ; /bin/rm qm-ini-*.pdb");	// tar and delete pdb files
+	system("tar -zcvf qm-ini.tgz qm-ini-*.pdb > /dev/null ; rm qm-ini-*.pdb");	// tar and delete pdb files
 
 	fclose(fFile_Run_Log);
 

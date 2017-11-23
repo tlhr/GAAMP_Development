@@ -125,7 +125,7 @@ fi
 
 exit
 cd $WORKDIR
-/bin/tar -zcvf $RUNFOLDER.tgz ./$RUNFOLDER
+tar -zcvf $RUNFOLDER.tgz ./$RUNFOLDER
 chmod a+rx $RUNFOLDER.tgz
 
 exit

@@ -1,6 +1,6 @@
 import os
 
-os.system('/usr/bin/find ./ -name "output.out" > find-qm-list.txt')
+os.system('find . -name "output.out" > find-qm-list.txt')
 
 fIn = open('find-qm-list.txt','r')
 
