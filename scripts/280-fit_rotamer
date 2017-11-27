@@ -25,7 +25,7 @@ cp mol-tor.rtf ../results/mol-tor.rtf
 cp mol.prm ../results/mol-tor.prm
 cp mol.xpsf ../results/mol-tor.xpsf
 
-$GAAMPSCRIPTS/rotamer-plot-1d-result-and-org.sh
+$GAAMPSCRIPTS/plot-1d-result-and-org.sh
 cp *.png ../result/
 
 exit 0
