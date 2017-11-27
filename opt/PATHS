@@ -1,12 +1,12 @@
 #!/bin/sh
-GAUSS_EXEDIR="$HOME/opt/g09"
-G09_EXE_PATH="$GAUSS_EXEDIR/g09" ## points to g16;provide a proper g16 path above
-AMBERDIR="undefined"  ## provide your AMBER path
-BABELDIR="/usr/local/" ## provide your BABEL path
-MATCHDIR="$HOME/Documents/uni/Cambridge/research/codes/MATCH_RELEASE"
-GNUPLOT="/usr/local/bin" ## provide your gnuplot path
-PYTHON=python2.7
+GAUSS_EXEDIR="$HOME/opt/g09"  # Gaussian directory
+G09_EXE_PATH="$GAUSS_EXEDIR/g09"  # Gaussian executable
+AMBERDIR="undefined"  # Directory containing AMBER (only when using GAFF)
+BABELDIR="/usr/local/"  # Directory containing OpenBabel
+MATCHDIR="$HOME/Documents/uni/Cambridge/research/codes/MATCH_RELEASE"  # Directory containing MATCH, PerlChemistry
+GNUPLOT="/usr/local/bin"  # Directory containing gnuplot
+PYTHON=python2.7  # Only python2.7 supported
 QM_NPROC=4
 QM_MEM=2 # GB per core
-GAUSSIAN=g09
+GAUSSIAN=g09  # Gaussian executable name
 export GDFONTPATH="undefined" ## fonts path
