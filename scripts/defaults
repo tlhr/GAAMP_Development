@@ -2,11 +2,11 @@
 
 MaxTorsion=8
 mem_per_core="2GB"
-ncore="12"
+ncore="4"
 mpirun="mpiexec -np $ncore"
 
 JobName="job"
-Ini_Parameters="GAFF"
+Ini_Parameters="Match"
 TorsionFitting=1
 DrudeModel=0
 To_Fit_E_Wat=1

@@ -8,7 +8,7 @@ def writeQMSetting(GAAMP_RUN,QM_MEM,QM_NPROC):
         token=line.rstrip().split()
         if len(token)>0:
             if token[0]=="QM_MEM":
-                line = line.replace("QM_MEM        1GB","QM_MEM        "+QM_MEM)
+                line = line.replace("QM_MEM        4GB","QM_MEM        "+QM_MEM)
             elif token[0]=="QM_NPROC":
                 line = line.replace("QM_NPROC      8","QM_NPROC      "+QM_NPROC)		
         print>>fout,line.rstrip()
